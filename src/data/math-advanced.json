@@ -1,0 +1,22 @@
+[
+  { "question": "Hva er 25 + 17?", "answers": ["32", "37", "42", "50"], "correctAnswer": "42" },
+  { "question": "Hva er 72 - 29?", "answers": ["43", "41", "53", "39"], "correctAnswer": "43" },
+  { "question": "Hva er 6 x 7?", "answers": ["42", "36", "49", "40"], "correctAnswer": "42" },
+  { "question": "Hva er 81 ÷ 9?", "answers": ["8", "9", "7", "6"], "correctAnswer": "9" },
+  { "question": "Hva er 14 + 36?", "answers": ["48", "50", "49", "51"], "correctAnswer": "50" },
+  { "question": "Hva er 64 - 28?", "answers": ["36", "34", "38", "40"], "correctAnswer": "36" },
+  { "question": "Hva er 9 x 8?", "answers": ["72", "81", "64", "70"], "correctAnswer": "72" },
+  { "question": "Hva er 96 ÷ 8?", "answers": ["11", "13", "12", "10"], "correctAnswer": "12" },
+  { "question": "Hva er 23 + 19?", "answers": ["42", "41", "43", "44"], "correctAnswer": "42" },
+  { "question": "Hva er 55 - 17?", "answers": ["38", "36", "40", "37"], "correctAnswer": "38" },
+  { "question": "Hva er 7 x 6?", "answers": ["42", "36", "49", "40"], "correctAnswer": "42" },
+  { "question": "Hva er 56 ÷ 7?", "answers": ["7", "8", "9", "6"], "correctAnswer": "8" },
+  { "question": "Hva er 33 + 27?", "answers": ["61", "59", "60", "62"], "correctAnswer": "60" },
+  { "question": "Hva er 90 - 38?", "answers": ["52", "54", "56", "50"], "correctAnswer": "52" },
+  { "question": "Hva er 12 x 5?", "answers": ["60", "50", "55", "65"], "correctAnswer": "60" },
+  { "question": "Hva er 84 ÷ 6?", "answers": ["14", "16", "13", "12"], "correctAnswer": "14" },
+  { "question": "Hva er 45 + 28?", "answers": ["72", "73", "74", "75"], "correctAnswer": "73" },
+  { "question": "Hva er 70 - 23?", "answers": ["47", "48", "49", "46"], "correctAnswer": "47" },
+  { "question": "Hva er 8 x 9?", "answers": ["72", "64", "81", "70"], "correctAnswer": "72" },
+  { "question": "Hva er 100 ÷ 4?", "answers": ["24", "25", "26", "23"], "correctAnswer": "25" }
+]
