@@ -7,7 +7,7 @@
     <div class="grid w-full max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
       <CategoryCard
         v-for="quiz in quizzes"
-        :key="quiz.id"
+        :key="quiz.path"
         :title="quiz.title"
         :description="quiz.description"
         :category="quiz.path"
@@ -21,22 +21,19 @@ import CategoryCard from '@/components/ui/CategoryCard.vue'
 
 const quizzes = [
   {
-    id: 'math-intro',
+    path: '/quiz/math-intro',
     title: 'Introquiz i matte',
-    description: 'Lær grunnleggende matte!',
-    path: 'quiz/math-intro',
+    description: 'Test dine matteferdigheter!',
   },
   {
-    id: 'math-advanced',
+    path: '/quiz/math-advanced',
     title: 'Avansert matte',
-    description: 'Utfordrende matteoppgaver.',
-    path: 'quiz/math-advanced',
+    description: 'Utfordre deg selv med vanskeligere matte',
   },
   {
-    id: 'math-timed',
+    path: '/quiz/timed/math-timed',
     title: 'Regning på tid',
-    description: 'Svar så raskt du kan!',
-    path: 'quiz/timed/math-timed',
+    description: 'Hvor rask er du i hoderegning?',
   },
 ]
 </script>

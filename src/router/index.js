@@ -1,7 +1,5 @@
-// Importerer funksjoner fra vue-router
 import { createRouter, createWebHistory } from 'vue-router'
 
-// Importerer views
 import HomeView from '@/views/HomeView.vue'
 import CategoryMathView from '@/views/CategoryMathView.vue'
 import CategoryGeographyView from '@/views/CategoryGeographyView.vue'
@@ -21,11 +19,9 @@ const routes = [
   { path: '/category/historie', name: 'CategoryHistory', component: CategoryHistoryView },
   { path: '/category/dyr', name: 'CategoryAnimals', component: CategoryAnimalsView },
 
-  // Timed quiz-siden (egen prefix /quiz/timed/)
-  { path: '/quiz/timed/:id', name: 'QuizTimed', component: QuizTimedView, props: true },
-
-  // Vanlig quiz-siden
+  // Quiz-sider
   { path: '/quiz/:id', name: 'Quiz', component: QuizView, props: true },
+  { path: '/quiz/timed/:id', name: 'QuizTimed', component: QuizTimedView, props: true },
 
   // Resultatsiden
   { path: '/result', name: 'Result', component: ResultView },
