@@ -1,55 +1,88 @@
 <template>
   <div
-    class="min-h-screen bg-gradient-to-r from-purple-500 to-pink-500 text-white flex flex-col items-center justify-center p-8"
+    class="flex flex-col items-center justify-center min-h-screen p-8 space-y-8 text-white bg-gradient-to-r from-purple-500 to-pink-500"
   >
-    <ProgressBar :current="currentQuestionIndex + 1" :total="questions.length" class="mb-6" />
+    <!-- Progress text -->
+    <div v-if="questions.length > 0" class="text-lg font-semibold">
+      Spørsmål {{ currentQuestionIndex + 1 }} / {{ questions.length }}
+    </div>
 
-    <QuestionCard
-      v-if="!quizFinished"
-      :questionData="questions[currentQuestionIndex]"
-      :onAnswerSelected="handleAnswer"
-    />
+    <!-- Spørsmål og svar -->
+    <div
+      v-if="!quizFinished && questions.length > 0"
+      class="flex flex-col items-center w-full max-w-xl p-8 space-y-6 text-black bg-white rounded-lg shadow-lg"
+    >
+      <h2 class="text-2xl font-bold text-center">
+        {{ questions[currentQuestionIndex].question }}
+      </h2>
 
-    <div v-else class="text-center space-y-4">
+      <div class="grid w-full grid-cols-1 gap-4">
+        <button
+          v-for="answer in questions[currentQuestionIndex].answers"
+          :key="answer"
+          @click="handleAnswer(answer)"
+          class="px-6 py-3 text-white transition bg-blue-500 rounded hover:bg-blue-600"
+        >
+          {{ answer }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Resultatvisning -->
+    <div v-else-if="quizFinished" class="space-y-4 text-center">
       <h2 class="text-3xl font-bold">Gratulerer! 🎉</h2>
       <p>Du er ferdig med quizen.</p>
       <RouterLink
         to="/result"
-        class="inline-block mt-4 px-6 py-3 bg-green-500 text-white rounded hover:bg-green-600"
+        class="inline-block px-6 py-3 mt-4 text-white bg-green-500 rounded hover:bg-green-600"
       >
         Se resultatet ditt ⭐
       </RouterLink>
     </div>
+
+    <!-- Loading fallback -->
+    <div v-else class="text-xl">Laster spørsmål... ⏳</div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 import { useQuizStore } from '@/stores/quiz'
-import ProgressBar from '@/components/shared/ProgressBar.vue'
-import QuestionCard from '@/components/shared/QuestionCard.vue'
 
+const route = useRoute()
 const quizStore = useQuizStore()
 
-const questions = [
-  { question: 'Hva er 5 + 3?', answers: ['6', '7', '8', '9'], correctAnswer: '8' },
-  { question: 'Hva er 12 - 4?', answers: ['6', '7', '8', '9'], correctAnswer: '8' },
-  { question: 'Hva er 2 x 6?', answers: ['10', '12', '14', '16'], correctAnswer: '12' },
-  { question: 'Hva er 16 / 4?', answers: ['2', '3', '4', '5'], correctAnswer: '4' },
-  { question: 'Hva er 9 + 1?', answers: ['9', '10', '11', '12'], correctAnswer: '10' },
-]
-
+const questions = ref([])
 const currentQuestionIndex = ref(0)
 const quizFinished = ref(false)
 
-quizStore.resetQuiz()
-quizStore.setTotalQuestions(questions.length)
+async function loadQuizData() {
+  const quizId = route.params.id
+  try {
+    const data = await import(`@/data/${quizId}.json`)
+    questions.value = data.default
+    quizStore.resetQuiz()
+    quizStore.setTotalQuestions(questions.value.length)
+  } catch (error) {
+    console.error('Kunne ikke laste quiz-data:', error)
+  }
+}
 
-function handleAnswer() {
-  if (currentQuestionIndex.value + 1 < questions.length) {
+function handleAnswer(selectedAnswer) {
+  const correctAnswer = questions.value[currentQuestionIndex.value].correctAnswer
+  if (selectedAnswer === correctAnswer) {
+    quizStore.incrementScore()
+  }
+
+  if (currentQuestionIndex.value + 1 < questions.value.length) {
     currentQuestionIndex.value++
   } else {
     quizFinished.value = true
   }
 }
+
+onMounted(() => {
+  loadQuizData()
+})
 </script>

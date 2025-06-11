@@ -1,9 +1,9 @@
 <template>
   <div
     @click="goToCategory"
-    class="cursor-pointer bg-white rounded-lg shadow-md p-6 text-center hover:scale-105 transition-transform duration-300"
+    class="p-6 text-center transition-transform duration-300 bg-white rounded-lg shadow-md cursor-pointer hover:scale-105"
   >
-    <h2 class="text-xl font-bold mb-2">{{ title }}</h2>
+    <h2 class="mb-2 text-xl font-bold">{{ title }}</h2>
     <p class="text-sm text-gray-600">{{ description }}</p>
   </div>
 </template>
@@ -20,6 +20,6 @@ const props = defineProps({
 const router = useRouter()
 
 const goToCategory = () => {
-  router.push(`/quiz/${props.category}`)
+  router.push(props.category)
 }
 </script>

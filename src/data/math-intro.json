@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Hva er 5 + 3?",
+    "answers": ["6", "7", "8", "9"],
+    "correctAnswer": "8"
+  },
+  {
+    "question": "Hva er 12 - 4?",
+    "answers": ["6", "7", "8", "9"],
+    "correctAnswer": "8"
+  },
+  {
+    "question": "Hva er 2 x 6?",
+    "answers": ["10", "12", "14", "16"],
+    "correctAnswer": "12"
+  },
+  {
+    "question": "Hva er 16 / 4?",
+    "answers": ["2", "3", "4", "5"],
+    "correctAnswer": "4"
+  },
+  {
+    "question": "Hva er 9 + 1?",
+    "answers": ["9", "10", "11", "12"],
+    "correctAnswer": "10"
+  }
+]
