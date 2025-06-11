@@ -20,7 +20,7 @@ const props = defineProps({
 const router = useRouter()
 
 const goToCategory = () => {
-  router.push(`/${props.category}`) // 👈 Liten, men viktig fiks
+  router.push(props.category) // ⚠️ Ikke legg til ekstra '/' her!
 }
 </script>
 
