@@ -1,22 +1,16 @@
-// Importerer funksjoner fra vue-router:
-// - createRouter: lager selve routeren som brukes i appen
-// - createWebHistory: bruker browserens historikk-API for "pen" URL (uten hash-tegn).
+// Importerer funksjoner fra vue-router
 import { createRouter, createWebHistory } from 'vue-router'
 
-// Importerer de ulike visningene (views) som vi skal navigere mellom.
+// Importerer views
 import HomeView from '@/views/HomeView.vue'
 import CategoryMathView from '@/views/CategoryMathView.vue'
 import CategoryGeographyView from '@/views/CategoryGeographyView.vue'
 import CategoryHistoryView from '@/views/CategoryHistoryView.vue'
 import CategoryAnimalsView from '@/views/CategoryAnimalsView.vue'
 import QuizView from '@/views/QuizView.vue'
+import QuizTimedView from '@/views/QuizTimedView.vue'
 import ResultView from '@/views/ResultView.vue'
 
-// Definerer en liste med ruter (routes).
-// Hver rute forteller:
-// - hvilken sti (path) som skal matche i URL
-// - et navn på ruten (name) — kan brukes til navigasjon
-// - hvilken komponent (component) som skal vises når denne ruten er aktiv.
 const routes = [
   // Hjem-siden
   { path: '/', name: 'Home', component: HomeView },
@@ -27,24 +21,21 @@ const routes = [
   { path: '/category/historie', name: 'CategoryHistory', component: CategoryHistoryView },
   { path: '/category/dyr', name: 'CategoryAnimals', component: CategoryAnimalsView },
 
-  // Quiz-siden
-  // Merk: :id betyr at dette er en dynamisk del av URL-en (f.eks. /quiz/math-intro)
-  // props: true gjør at vi kan motta quiz-id som en prop i QuizView.
+  // Timed quiz-siden (egen prefix /quiz/timed/)
+  { path: '/quiz/timed/:id', name: 'QuizTimed', component: QuizTimedView, props: true },
+
+  // Vanlig quiz-siden
   { path: '/quiz/:id', name: 'Quiz', component: QuizView, props: true },
 
   // Resultatsiden
   { path: '/result', name: 'Result', component: ResultView },
 ]
 
-// Lager selve router-instansen.
-// - Bruker createWebHistory() for pen URL (f.eks. /quiz/math-intro i stedet for /#/quiz/math-intro)
-// - Bruker routes-listen som vi definerte over.
 const router = createRouter({
   history: createWebHistory(),
   routes,
 })
 
-// Eksporterer router slik at vi kan bruke den i appen (f.eks. i main.js).
 export default router
 
 // Sammendrag av hva denne filen gjør:

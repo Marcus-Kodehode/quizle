@@ -1,0 +1,77 @@
+[
+  {
+    "question": "Hva er 15 + 27?",
+    "answers": ["42", "43", "44", "45"],
+    "correctAnswer": "42"
+  },
+  {
+    "question": "Hva er 9 x 6?",
+    "answers": ["52", "54", "56", "58"],
+    "correctAnswer": "54"
+  },
+  {
+    "question": "Hva er 81 : 9?",
+    "answers": ["9", "8", "7", "6"],
+    "correctAnswer": "9"
+  },
+  {
+    "question": "Hvor mange prosent er 25 av 100?",
+    "answers": ["20 %", "25 %", "30 %", "35 %"],
+    "correctAnswer": "25 %"
+  },
+  {
+    "question": "Hva er arealet av et rektangel med sider 4 m og 6 m?",
+    "answers": ["20 m²", "22 m²", "24 m²", "26 m²"],
+    "correctAnswer": "24 m²"
+  },
+  {
+    "question": "Hva er omkretsen av en trekant med sider 5 cm, 7 cm og 8 cm?",
+    "answers": ["18 cm", "19 cm", "20 cm", "21 cm"],
+    "correctAnswer": "20 cm"
+  },
+  {
+    "question": "Hva er 120 minutter i timer?",
+    "answers": ["1 time", "1,5 time", "2 timer", "2,5 timer"],
+    "correctAnswer": "2 timer"
+  },
+  {
+    "question": "Hva er 50 % av 80?",
+    "answers": ["30", "35", "40", "45"],
+    "correctAnswer": "40"
+  },
+  {
+    "question": "Hva er 7² (7 opphøyd i 2)?",
+    "answers": ["47", "48", "49", "50"],
+    "correctAnswer": "49"
+  },
+  {
+    "question": "Hva er 2,5 + 3,7?",
+    "answers": ["6,0", "6,1", "6,2", "6,3"],
+    "correctAnswer": "6,2"
+  },
+  {
+    "question": "Hvor mange centimeter er det i 2 meter?",
+    "answers": ["100 cm", "150 cm", "200 cm", "250 cm"],
+    "correctAnswer": "200 cm"
+  },
+  {
+    "question": "Hva er ¼ av 100?",
+    "answers": ["20", "25", "30", "35"],
+    "correctAnswer": "25"
+  },
+  {
+    "question": "Hva er 8 x 12?",
+    "answers": ["94", "95", "96", "97"],
+    "correctAnswer": "96"
+  },
+  {
+    "question": "Hvis en bok koster 120 kr og får 25 % rabatt, hva betaler du?",
+    "answers": ["80 kr", "85 kr", "90 kr", "95 kr"],
+    "correctAnswer": "90 kr"
+  },
+  {
+    "question": "Hva er summen av tallene 13, 24 og 33?",
+    "answers": ["69", "70", "71", "72"],
+    "correctAnswer": "70"
+  }
+]

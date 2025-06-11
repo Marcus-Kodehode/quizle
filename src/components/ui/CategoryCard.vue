@@ -1,38 +1,26 @@
 <template>
-  <!-- Ytre div for kortet.
-       - @click="goToCategory": Når kortet klikkes, kjører vi funksjonen goToCategory (som navigerer til riktig side).
-       - Styling: hvit bakgrunn, avrundede hjørner, skygge, animasjon ved hover (skalering). -->
   <div
     @click="goToCategory"
     class="p-6 text-center transition-transform duration-300 bg-white rounded-lg shadow-md cursor-pointer hover:scale-105"
   >
-    <!-- Viser tittel (prop 'title') -->
     <h2 class="mb-2 text-xl font-bold">{{ title }}</h2>
-
-    <!-- Viser beskrivelse (prop 'description') -->
     <p class="text-sm text-gray-600">{{ description }}</p>
   </div>
 </template>
 
 <script setup>
-// Importerer useRouter fra vue-router slik at vi kan navigere programmatisk.
 import { useRouter } from 'vue-router'
 
-// Definerer hvilke props denne komponenten mottar.
-// Når du bruker <CategoryCard ... /> sender du inn disse verdiene fra foreldrekomponenter (f.eks. HomeView).
 const props = defineProps({
-  title: String, // Tittelen som vises på kortet.
-  description: String, // Beskrivelsen som vises på kortet.
-  category: String, // URL-en vi skal navigere til når kortet klikkes.
+  title: String,
+  description: String,
+  category: String,
 })
 
-// Lager en router-instans som vi kan bruke til å navigere.
 const router = useRouter()
 
-// Funksjon som kjører når kortet klikkes.
-// Bruker router.push() for å navigere til verdien av props.category (som er en URL-sti, f.eks. "/quiz/math-intro").
 const goToCategory = () => {
-  router.push(props.category)
+  router.push(`/${props.category}`) // 👈 Liten, men viktig fiks
 }
 </script>
 
