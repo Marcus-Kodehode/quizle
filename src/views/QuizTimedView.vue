@@ -61,7 +61,7 @@ const route = useRoute()
 const questions = ref([])
 const currentQuestionIndex = ref(0)
 const quizFinished = ref(false)
-const timer = ref(10)
+const timer = ref(20)
 let timerInterval = null
 
 // Funksjon for å laste inn quiz-data fra JSON basert på quizId i URL
@@ -80,7 +80,7 @@ async function loadQuizData() {
 
 // Funksjon for å starte nedtellingstimer (10 sekunder per spørsmål)
 function startTimer() {
-  timer.value = 10
+  timer.value = 20
   timerInterval = setInterval(() => {
     timer.value--
     if (timer.value <= 0) {
