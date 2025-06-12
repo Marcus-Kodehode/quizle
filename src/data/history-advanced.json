@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Hvem var Norges første konge?",
+    "answers": ["Olav den hellige", "Harald Hårfagre", "Magnus den gode", "Eirik Blodøks"],
+    "correctAnswer": "Harald Hårfagre"
+  },
+  {
+    "question": "Når ble Eidsvoll-grunnloven vedtatt?",
+    "answers": ["1812", "1814", "1821", "1833"],
+    "correctAnswer": "1814"
+  },
+  {
+    "question": "Hva het vikingskipene som ble brukt til handel og krig?",
+    "answers": ["Knarr", "Karakk", "Trirem", "Karavell"],
+    "correctAnswer": "Knarr"
+  },
+  {
+    "question": "Hvem var statsminister i Storbritannia under andre verdenskrig?",
+    "answers": ["Winston Churchill", "Neville Chamberlain", "Tony Blair", "Margaret Thatcher"],
+    "correctAnswer": "Winston Churchill"
+  },
+  {
+    "question": "I hvilket år startet den amerikanske uavhengighetskrigen?",
+    "answers": ["1775", "1783", "1801", "1812"],
+    "correctAnswer": "1775"
+  },
+  {
+    "question": "Hva var navnet på romerske gladiator-kamparenaen i Roma?",
+    "answers": ["Pantheon", "Forum Romanum", "Colosseum", "Circus Maximus"],
+    "correctAnswer": "Colosseum"
+  },
+  {
+    "question": "Når ble Berlinmuren bygd?",
+    "answers": ["1945", "1955", "1961", "1989"],
+    "correctAnswer": "1961"
+  },
+  {
+    "question": "Hvem var den første kvinnelige statsministeren i Storbritannia?",
+    "answers": ["Margaret Thatcher", "Theresa May", "Elizabeth II", "Mary Stuart"],
+    "correctAnswer": "Margaret Thatcher"
+  },
+  {
+    "question": "Hva het Norges konge under andre verdenskrig?",
+    "answers": ["Haakon VII", "Olav V", "Harald V", "Haakon VI"],
+    "correctAnswer": "Haakon VII"
+  },
+  {
+    "question": "Hva het vikingbyen som i dag heter York?",
+    "answers": ["Jorvik", "Dublin", "Oslo", "Novgorod"],
+    "correctAnswer": "Jorvik"
+  },
+  {
+    "question": "I hvilket land startet renessansen?",
+    "answers": ["Frankrike", "Spania", "Italia", "Tyskland"],
+    "correctAnswer": "Italia"
+  },
+  {
+    "question": "Hvem oppdaget Amerika i 1492?",
+    "answers": ["Marco Polo", "Amerigo Vespucci", "Christopher Columbus", "Ferdinand Magellan"],
+    "correctAnswer": "Christopher Columbus"
+  },
+  {
+    "question": "Hva het dronningen som regjerte i England i nesten 64 år på 1800-tallet?",
+    "answers": ["Elizabeth I", "Mary I", "Victoria", "Anne"],
+    "correctAnswer": "Victoria"
+  },
+  {
+    "question": "Hva het den norske polfareren som var først til Sydpolen?",
+    "answers": ["Fridtjof Nansen", "Roald Amundsen", "Otto Sverdrup", "Hjalmar Johansen"],
+    "correctAnswer": "Roald Amundsen"
+  },
+  {
+    "question": "Hvem var kjent som \"Mahatma\"?",
+    "answers": ["Dalai Lama", "Jawaharlal Nehru", "Indira Gandhi", "Mahatma Gandhi"],
+    "correctAnswer": "Mahatma Gandhi"
+  },
+  {
+    "question": "Når startet første verdenskrig?",
+    "answers": ["1912", "1914", "1916", "1918"],
+    "correctAnswer": "1914"
+  },
+  {
+    "question": "Hva het den norske oppfinneren som oppfant papirklipsen?",
+    "answers": ["Johan Vaaler", "Ole Evenstad", "Christian Michelsen", "Peder Anker"],
+    "correctAnswer": "Johan Vaaler"
+  },
+  {
+    "question": "Hva het den egyptiske dronningen som styrte sammen med Julius Cæsar og Marcus Antonius?",
+    "answers": ["Cleopatra", "Nefertiti", "Hatshepsut", "Isis"],
+    "correctAnswer": "Cleopatra"
+  },
+  {
+    "question": "Hva het freden som avsluttet første verdenskrig?",
+    "answers": ["Freden i Versailles", "Freden i Yalta", "Freden i Potsdam", "Freden i Paris"],
+    "correctAnswer": "Freden i Versailles"
+  },
+  {
+    "question": "Hva het mannen som malte \"Mona Lisa\"?",
+    "answers": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
+    "correctAnswer": "Leonardo da Vinci"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Hvem var den første presidenten i USA?",
+    "answers": ["George Washington", "Abraham Lincoln", "John Adams", "Thomas Jefferson"],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "question": "Når begynte andre verdenskrig?",
+    "answers": ["1935", "1939", "1941", "1945"],
+    "correctAnswer": "1939"
+  },
+  {
+    "question": "Hvilket år ble Norge selvstendig fra Sverige?",
+    "answers": ["1814", "1905", "1945", "1972"],
+    "correctAnswer": "1905"
+  },
+  {
+    "question": "Hva het skipet som fraktet pilgrimer til Amerika i 1620?",
+    "answers": ["Santa Maria", "Mayflower", "Endeavour", "Beagle"],
+    "correctAnswer": "Mayflower"
+  },
+  {
+    "question": "Hvem oppfant boktrykkerkunsten?",
+    "answers": ["Leonardo da Vinci", "Johannes Gutenberg", "Galileo Galilei", "Isaac Newton"],
+    "correctAnswer": "Johannes Gutenberg"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Når ble Berlinmuren revet?",
+    "answers": ["1985", "1987", "1989", "1991"],
+    "correctAnswer": "1989"
+  },
+  {
+    "question": "Hvem var dronning av Storbritannia under andre verdenskrig?",
+    "answers": ["Victoria", "Mary", "Elizabeth I", "Elizabeth II"],
+    "correctAnswer": "Mary"
+  },
+  {
+    "question": "Hvem var kjent som \"Jernkvinnen\"?",
+    "answers": ["Angela Merkel", "Theresa May", "Margaret Thatcher", "Golda Meir"],
+    "correctAnswer": "Margaret Thatcher"
+  },
+  {
+    "question": "I hvilket år ble FN grunnlagt?",
+    "answers": ["1919", "1945", "1955", "1965"],
+    "correctAnswer": "1945"
+  },
+  {
+    "question": "Hvilket land ble først til å sende et menneske til månen?",
+    "answers": ["Sovjetunionen", "USA", "Kina", "Japan"],
+    "correctAnswer": "USA"
+  },
+  {
+    "question": "Hvem var keiser i Roma da Pompeii ble ødelagt?",
+    "answers": ["Nero", "Tiberius", "Augustus", "Titus"],
+    "correctAnswer": "Titus"
+  },
+  {
+    "question": "Hvilket år ble Norge med i NATO?",
+    "answers": ["1949", "1955", "1963", "1972"],
+    "correctAnswer": "1949"
+  },
+  {
+    "question": "Hva het den norske kongen under slaget ved Stiklestad?",
+    "answers": ["Olav Haraldsson", "Harald Hårfagre", "Olav Tryggvason", "Magnus Erlingsson"],
+    "correctAnswer": "Olav Haraldsson"
+  },
+  {
+    "question": "Hvilken by ble atombombet sammen med Hiroshima?",
+    "answers": ["Nagasaki", "Osaka", "Tokyo", "Kyoto"],
+    "correctAnswer": "Nagasaki"
+  },
+  {
+    "question": "Når ble Den franske revolusjon startet?",
+    "answers": ["1776", "1789", "1812", "1848"],
+    "correctAnswer": "1789"
+  },
+  {
+    "question": "Hva het de første menneskene som landet på månen?",
+    "answers": [
+      "Neil Armstrong og Buzz Aldrin",
+      "John Glenn og Yuri Gagarin",
+      "Alan Shepard og Michael Collins",
+      "Valentina Tereshkova og Neil Armstrong"
+    ],
+    "correctAnswer": "Neil Armstrong og Buzz Aldrin"
+  },
+  {
+    "question": "Hvem var farao i Egypt under byggingen av den store pyramiden i Giza?",
+    "answers": ["Tutankhamon", "Ramses II", "Khufu", "Cleopatra"],
+    "correctAnswer": "Khufu"
+  },
+  {
+    "question": "Når startet vikingtiden?",
+    "answers": ["600 e.Kr.", "700 e.Kr.", "793 e.Kr.", "850 e.Kr."],
+    "correctAnswer": "793 e.Kr."
+  },
+  {
+    "question": "Hvilket land ble invadert av Tyskland i september 1939?",
+    "answers": ["Frankrike", "Sovjetunionen", "Polen", "Tsjekkoslovakia"],
+    "correctAnswer": "Polen"
+  },
+  {
+    "question": "Hvem var den første kvinnelige statsministeren i Norge?",
+    "answers": ["Gro Harlem Brundtland", "Kaci Kullmann Five", "Erna Solberg", "Anne Enger"],
+    "correctAnswer": "Gro Harlem Brundtland"
+  }
+]
