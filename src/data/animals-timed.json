@@ -1,0 +1,77 @@
+[
+  {
+    "question": "Hvor mange bein har en bille?",
+    "answers": ["4", "6", "8", "10"],
+    "correctAnswer": "6"
+  },
+  {
+    "question": "Hva slags dyr er en delfin?",
+    "answers": ["Fisk", "Pattedyr", "Krypdyr", "Amfibie"],
+    "correctAnswer": "Pattedyr"
+  },
+  {
+    "question": "Hva slags dyr er Skippy?",
+    "answers": ["Kenguru", "Koala", "Emu", "Vombat"],
+    "correctAnswer": "Kenguru"
+  },
+  {
+    "question": "Hva heter det største pattedyret på land?",
+    "answers": ["Flodhest", "Neshorn", "Elefant", "Giraff"],
+    "correctAnswer": "Elefant"
+  },
+  {
+    "question": "Hvilket dyr har det vitenskapelige navnet 'Panthera leo'?",
+    "answers": ["Tiger", "Gepard", "Løve", "Leopard"],
+    "correctAnswer": "Løve"
+  },
+  {
+    "question": "Hvilket dyr har lange ører og hopper?",
+    "answers": ["Katt", "Hest", "Hund", "Kanin"],
+    "correctAnswer": "Kanin"
+  },
+  {
+    "question": "Hva slags dyr er en torsk?",
+    "answers": ["Krepsdyr", "Bløtdyr", "Fisk", "Pattedyr"],
+    "correctAnswer": "Fisk"
+  },
+  {
+    "question": "Hvilket dyr er kjent for å kunne etterligne menneskestemmer?",
+    "answers": ["Ørn", "Papegøye", "Høne", "Struts"],
+    "correctAnswer": "Papegøye"
+  },
+  {
+    "question": "Hva slags dyr er en sjimpanse?",
+    "answers": ["Fugl", "Pattedyr", "Fisk", "Krypdyr"],
+    "correctAnswer": "Pattedyr"
+  },
+  {
+    "question": "Hvor mange bein har en edderkopp?",
+    "answers": ["6", "8", "10", "12"],
+    "correctAnswer": "8"
+  },
+  {
+    "question": "Hva slags dyr er Baloo i Jungelboken?",
+    "answers": ["Tiger", "Panter", "Bjørn", "Ape"],
+    "correctAnswer": "Bjørn"
+  },
+  {
+    "question": "Hva slags dyr er Nemo i filmen 'Oppdrag Nemo'?",
+    "answers": ["Klovnefisk", "Blå tang", "Gullfisk", "Seilfisk"],
+    "correctAnswer": "Klovnefisk"
+  },
+  {
+    "question": "Hva slags dyr er en huskatt?",
+    "answers": ["Krypdyr", "Pattedyr", "Fisk", "Fugl"],
+    "correctAnswer": "Pattedyr"
+  },
+  {
+    "question": "Hva slags dyr er en panda?",
+    "answers": ["Krypdyr", "Pattedyr", "Fisk", "Amfibie"],
+    "correctAnswer": "Pattedyr"
+  },
+  {
+    "question": "Hva slags dyr er en hai?",
+    "answers": ["Fugl", "Pattedyr", "Krypdyr", "Fisk"],
+    "correctAnswer": "Fisk"
+  }
+]

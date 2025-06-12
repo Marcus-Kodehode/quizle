@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Hva er verdens største dyr?",
+    "answers": ["Elefant", "Blåhval", "Hvalhai", "Kaskelothval"],
+    "correctAnswer": "Blåhval"
+  },
+  {
+    "question": "Hvilket dyr er kjent for å ha en lang hals?",
+    "answers": ["Elefant", "Sjiraff", "Kamel", "Struts"],
+    "correctAnswer": "Sjiraff"
+  },
+  {
+    "question": "Hva slags dyr er en komodovaran?",
+    "answers": ["Fugl", "Pattedyr", "Krypdyr", "Amfibie"],
+    "correctAnswer": "Krypdyr"
+  },
+  {
+    "question": "Hvilket dyr er kjent som 'Kongen av jungelen'?",
+    "answers": ["Tiger", "Gorilla", "Løve", "Leopard"],
+    "correctAnswer": "Løve"
+  },
+  {
+    "question": "Hva slags dyr er Nemo i filmen 'Oppdrag Nemo'?",
+    "answers": ["Klovnefisk", "Blå tang", "Gullfisk", "Seilfisk"],
+    "correctAnswer": "Klovnefisk"
+  }
+]

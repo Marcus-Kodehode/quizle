@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Hvilket dyr har lengst tunge i forhold til kroppsstørrelse?",
+    "answers": ["Kameleont", "Maurspiser", "Hest", "Kolibri"],
+    "correctAnswer": "Kameleont"
+  },
+  {
+    "question": "Hva heter verdens raskeste landdyr?",
+    "answers": ["Gepard", "Gnu", "Gaselle", "Leopard"],
+    "correctAnswer": "Gepard"
+  },
+  {
+    "question": "Hvilket dyr er kjent for å bygge demninger?",
+    "answers": ["Bever", "Ekorn", "Grevlings", "Oter"],
+    "correctAnswer": "Bever"
+  },
+  {
+    "question": "Hva slags dyr er en iguan?",
+    "answers": ["Fugl", "Krypdyr", "Amfibie", "Pattedyr"],
+    "correctAnswer": "Krypdyr"
+  },
+  {
+    "question": "Hvilket pattedyr kan fly?",
+    "answers": ["Flaggermus", "Ekorng", "Kolibri", "Papegøye"],
+    "correctAnswer": "Flaggermus"
+  },
+  {
+    "question": "Hva heter verdens største slange?",
+    "answers": ["Pyton", "Anakonda", "Kobraslange", "Boa"],
+    "correctAnswer": "Anakonda"
+  },
+  {
+    "question": "Hva slags dyr er en narhval?",
+    "answers": ["Hai", "Delfin", "Hval", "Spekkhogger"],
+    "correctAnswer": "Hval"
+  },
+  {
+    "question": "Hva heter fuglen som ikke kan fly og er kjent fra Antarktis?",
+    "answers": ["Struts", "Pingvin", "Emu", "Kondor"],
+    "correctAnswer": "Pingvin"
+  },
+  {
+    "question": "Hvor mange ben har en edderkopp?",
+    "answers": ["6", "8", "10", "12"],
+    "correctAnswer": "8"
+  },
+  {
+    "question": "Hva heter verdens største rovfugl?",
+    "answers": ["Havørn", "Kongeørn", "Kondor", "Falk"],
+    "correctAnswer": "Kondor"
+  },
+  {
+    "question": "Hvilket dyr kalles 'skogens konge' i Norge?",
+    "answers": ["Elg", "Rådyr", "Bjørn", "Reinsdyr"],
+    "correctAnswer": "Elg"
+  },
+  {
+    "question": "Hva slags dyr er en manet?",
+    "answers": ["Fisk", "Bløtdyr", "Krepsdyr", "Nesledyr"],
+    "correctAnswer": "Nesledyr"
+  },
+  {
+    "question": "Hvilket dyr er kjent som verdens mest intelligente fugl?",
+    "answers": ["Kråke", "Papegøye", "Due", "Ørn"],
+    "correctAnswer": "Kråke"
+  },
+  {
+    "question": "Hva heter verdens største rovfisk?",
+    "answers": ["Hvithai", "Kjempehai", "Hammerhai", "Tigerhai"],
+    "correctAnswer": "Hvithai"
+  },
+  {
+    "question": "Hvilket dyr kan sove stående?",
+    "answers": ["Hund", "Katt", "Ku", "Hest"],
+    "correctAnswer": "Hest"
+  },
+  {
+    "question": "Hva er det eneste pattedyret som legger egg?",
+    "answers": ["Flodhest", "Dovendyr", "Nebbdyret", "Echidna"],
+    "correctAnswer": "Nebbdyret"
+  },
+  {
+    "question": "Hvilket dyr kan puste gjennom huden?",
+    "answers": ["Fisk", "Frosk", "Slange", "Skilpadde"],
+    "correctAnswer": "Frosk"
+  },
+  {
+    "question": "Hva er den største arten av bjørn?",
+    "answers": ["Brunbjørn", "Isbjørn", "Panda", "Grizzlybjørn"],
+    "correctAnswer": "Isbjørn"
+  },
+  {
+    "question": "Hvilket dyr har sort og hvitt stripet pels?",
+    "answers": ["Gepard", "Løve", "Zebra", "Tiger"],
+    "correctAnswer": "Zebra"
+  },
+  {
+    "question": "Hva slags dyr er en sjøhest?",
+    "answers": ["Bløtdyr", "Krepsdyr", "Fisk", "Pattedyr"],
+    "correctAnswer": "Fisk"
+  }
+]
