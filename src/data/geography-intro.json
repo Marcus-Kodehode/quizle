@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Hva er hovedstaden i Norge?",
+    "answers": ["Oslo", "Bergen", "Trondheim", "Stavanger"],
+    "correctAnswer": "Oslo"
+  },
+  {
+    "question": "Hvilket kontinent ligger Brasil på?",
+    "answers": ["Asia", "Europa", "Sør-Amerika", "Afrika"],
+    "correctAnswer": "Sør-Amerika"
+  },
+  {
+    "question": "Hva er det største havet på jorden?",
+    "answers": ["Atlanterhavet", "Stillehavet", "Indiahavet", "Nordishavet"],
+    "correctAnswer": "Stillehavet"
+  },
+  {
+    "question": "Hvilket land har flest innbyggere?",
+    "answers": ["USA", "Kina", "India", "Russland"],
+    "correctAnswer": "India"
+  },
+  {
+    "question": "Hva er hovedstaden i Sverige?",
+    "answers": ["Göteborg", "Malmö", "Stockholm", "Uppsala"],
+    "correctAnswer": "Stockholm"
+  }
+]

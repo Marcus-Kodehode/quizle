@@ -1,0 +1,77 @@
+[
+  {
+    "question": "Hva er hovedstaden i Sverige?",
+    "answers": ["Stockholm", "Oslo", "Helsinki", "København"],
+    "correctAnswer": "Stockholm"
+  },
+  {
+    "question": "Hva er hovedstaden i Frankrike?",
+    "answers": ["Marseille", "Lyon", "Paris", "Toulouse"],
+    "correctAnswer": "Paris"
+  },
+  {
+    "question": "Hvilket hav ligger øst for USA?",
+    "answers": ["Stillehavet", "Nordishavet", "Atlanterhavet", "Det indiske hav"],
+    "correctAnswer": "Atlanterhavet"
+  },
+  {
+    "question": "Hva er hovedstaden i Italia?",
+    "answers": ["Roma", "Milano", "Firenze", "Napoli"],
+    "correctAnswer": "Roma"
+  },
+  {
+    "question": "Hva heter fjellkjeden som går gjennom Norge?",
+    "answers": ["Alpene", "Himalaya", "Andesfjellene", "Skandinaviske fjell"],
+    "correctAnswer": "Skandinaviske fjell"
+  },
+  {
+    "question": "Hva heter verdens største ørken?",
+    "answers": ["Gobiørkenen", "Sahara", "Kalahariørkenen", "Arabiske ørken"],
+    "correctAnswer": "Sahara"
+  },
+  {
+    "question": "Hva er hovedstaden i Nederland?",
+    "answers": ["Amsterdam", "Rotterdam", "Haag", "Utrecht"],
+    "correctAnswer": "Amsterdam"
+  },
+  {
+    "question": "Hva er hovedstaden i Storbritannia?",
+    "answers": ["Liverpool", "London", "Manchester", "Edinburgh"],
+    "correctAnswer": "London"
+  },
+  {
+    "question": "Hvilket kontinent ligger Brasil i?",
+    "answers": ["Afrika", "Sør-Amerika", "Asia", "Europa"],
+    "correctAnswer": "Sør-Amerika"
+  },
+  {
+    "question": "Hva heter det største havet i verden?",
+    "answers": ["Atlanterhavet", "Nordishavet", "Det indiske hav", "Stillehavet"],
+    "correctAnswer": "Stillehavet"
+  },
+  {
+    "question": "Hva er hovedstaden i Spania?",
+    "answers": ["Barcelona", "Madrid", "Sevilla", "Valencia"],
+    "correctAnswer": "Madrid"
+  },
+  {
+    "question": "Hva heter Norges lengste elv?",
+    "answers": ["Numedalslågen", "Gudbrandsdalslågen", "Glomma", "Vorma"],
+    "correctAnswer": "Glomma"
+  },
+  {
+    "question": "Hvilket land grenser IKKE til Norge?",
+    "answers": ["Sverige", "Finland", "Russland", "Danmark"],
+    "correctAnswer": "Danmark"
+  },
+  {
+    "question": "Hva er hovedstaden i Finland?",
+    "answers": ["Tampere", "Turku", "Helsinki", "Espoo"],
+    "correctAnswer": "Helsinki"
+  },
+  {
+    "question": "Hva heter øygruppen nord for fastlands-Norge?",
+    "answers": ["Shetlandsøyene", "Færøyene", "Svalbard", "Azorene"],
+    "correctAnswer": "Svalbard"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Hva er hovedstaden i Tyskland?",
+    "answers": ["Berlin", "Hamburg", "München", "Frankfurt"],
+    "correctAnswer": "Berlin"
+  },
+  {
+    "question": "På hvilket kontinent ligger Egypt?",
+    "answers": ["Asia", "Afrika", "Europa", "Sør-Amerika"],
+    "correctAnswer": "Afrika"
+  },
+  {
+    "question": "Hva heter den lengste elven i verden?",
+    "answers": ["Amazonas", "Nilen", "Yangtze", "Mississippi"],
+    "correctAnswer": "Nilen"
+  },
+  {
+    "question": "Hva er hovedstaden i Canada?",
+    "answers": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+    "correctAnswer": "Ottawa"
+  },
+  {
+    "question": "Hvilket hav ligger øst for Afrika?",
+    "answers": ["Atlanterhavet", "Stillehavet", "Det indiske hav", "Nordishavet"],
+    "correctAnswer": "Det indiske hav"
+  },
+  {
+    "question": "Hva er det største landet i verden (areal)?",
+    "answers": ["Kina", "Canada", "Russland", "USA"],
+    "correctAnswer": "Russland"
+  },
+  {
+    "question": "Hva er hovedstaden i Australia?",
+    "answers": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    "correctAnswer": "Canberra"
+  },
+  {
+    "question": "Hva er Europas høyeste fjell?",
+    "answers": ["Mont Blanc", "Elbrus", "Matterhorn", "Grossglockner"],
+    "correctAnswer": "Elbrus"
+  },
+  {
+    "question": "Hva heter det største landet i Sør-Amerika?",
+    "answers": ["Argentina", "Chile", "Brasil", "Peru"],
+    "correctAnswer": "Brasil"
+  },
+  {
+    "question": "Hvilket hav dekker mest areal?",
+    "answers": ["Atlanterhavet", "Stillehavet", "Nordishavet", "Indiahavet"],
+    "correctAnswer": "Stillehavet"
+  },
+  {
+    "question": "Hva er hovedstaden i Japan?",
+    "answers": ["Kyoto", "Osaka", "Tokyo", "Hiroshima"],
+    "correctAnswer": "Tokyo"
+  },
+  {
+    "question": "Hva heter Norges største innsjø?",
+    "answers": ["Røssvatnet", "Femunden", "Mjøsa", "Tyrifjorden"],
+    "correctAnswer": "Mjøsa"
+  },
+  {
+    "question": "På hvilket kontinent ligger Chile?",
+    "answers": ["Nord-Amerika", "Europa", "Afrika", "Sør-Amerika"],
+    "correctAnswer": "Sør-Amerika"
+  },
+  {
+    "question": "Hva er det minste landet i verden?",
+    "answers": ["Monaco", "Malta", "San Marino", "Vatikanstaten"],
+    "correctAnswer": "Vatikanstaten"
+  },
+  {
+    "question": "Hva er hovedstaden i Portugal?",
+    "answers": ["Lisboa", "Porto", "Coimbra", "Braga"],
+    "correctAnswer": "Lisboa"
+  },
+  {
+    "question": "Hva er det største fjellet i Afrika?",
+    "answers": ["Kilimanjaro", "Atlasfjellene", "Mount Kenya", "Rwenzori"],
+    "correctAnswer": "Kilimanjaro"
+  },
+  {
+    "question": "Hva heter halvøya der Spania og Portugal ligger?",
+    "answers": ["Skandinaviske halvøy", "Balkan", "Iberiske halvøy", "Apenninske halvøy"],
+    "correctAnswer": "Iberiske halvøy"
+  },
+  {
+    "question": "Hvilket land har flest naboland?",
+    "answers": ["Kina", "Russland", "Brasil", "Tyskland"],
+    "correctAnswer": "Kina"
+  },
+  {
+    "question": "Hva er hovedstaden i Argentina?",
+    "answers": ["Buenos Aires", "Cordoba", "Rosario", "Mendoza"],
+    "correctAnswer": "Buenos Aires"
+  },
+  {
+    "question": "Hva er hovedstaden i Danmark?",
+    "answers": ["Aarhus", "Odense", "København", "Aalborg"],
+    "correctAnswer": "København"
+  }
+]

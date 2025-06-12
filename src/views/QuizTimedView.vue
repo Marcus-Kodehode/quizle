@@ -2,10 +2,13 @@
   <div
     class="flex flex-col items-center justify-center min-h-screen p-8 space-y-8 text-white bg-gradient-to-r from-purple-500 to-pink-500"
   >
-    <!-- Nedtelling per spørsmål -->
-    <div class="text-6xl font-bold" v-if="!quizFinished">{{ timer }} 🕑</div>
+    <!-- Timer med ikon -->
+    <div v-if="!quizFinished" class="flex items-center space-x-2 text-6xl font-bold">
+      <span>{{ timer }}</span>
+      <span>🕑</span>
+    </div>
 
-    <!-- Progress: Spørsmål X / Y -->
+    <!-- Fremdrift -->
     <div v-if="!quizFinished && questions.length > 0" class="text-xl">
       Spørsmål {{ currentQuestionIndex + 1 }} / {{ questions.length }}
     </div>
@@ -31,7 +34,7 @@
       </div>
     </div>
 
-    <!-- Resultatvisning -->
+    <!-- Resultat -->
     <div v-else-if="quizFinished" class="space-y-4 text-center">
       <h2 class="text-3xl font-bold">Gratulerer! 🎉</h2>
       <p>Du er ferdig med quizen.</p>
