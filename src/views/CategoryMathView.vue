@@ -11,6 +11,7 @@
         :title="quiz.title"
         :description="quiz.description"
         :category="quiz.path"
+        :image="quiz.image"
       />
     </div>
   </div>
@@ -19,21 +20,30 @@
 <script setup>
 import CategoryCard from '@/components/ui/CategoryCard.vue'
 
+// Importer bildene
+const beginnerImage = new URL('@/assets/icons/beginner.png', import.meta.url).href
+const advancedImage = new URL('@/assets/icons/advanced.png', import.meta.url).href
+const timedImage = new URL('@/assets/icons/timed.png', import.meta.url).href
+
+// Quiz array med image per quiz
 const quizzes = [
   {
     path: '/quiz/math-intro',
     title: 'Introquiz i matte',
     description: 'Test dine matteferdigheter!',
+    image: beginnerImage,
   },
   {
     path: '/quiz/math-advanced',
     title: 'Avansert matte',
     description: 'Utfordre deg selv med vanskeligere matte',
+    image: advancedImage,
   },
   {
     path: '/quiz/timed/math-timed',
     title: 'Regning på tid',
     description: 'Hvor rask er du i hoderegning?',
+    image: timedImage,
   },
 ]
 </script>

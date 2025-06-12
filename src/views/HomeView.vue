@@ -1,57 +1,77 @@
 <template>
-  <!-- Ytre beholder-div for hele innholdet.
-       Bruker Tailwind CSS-klasser for å gjøre layout og styling:
-       - flex flex-col: setter opp en kolonne-basert fleksboks
-       - items-center justify-center: sentrerer innholdet horisontalt og vertikalt
-       - min-h-screen: gjør høyden minst like stor som skjermhøyden
-       - p-8: gir padding (luft) rundt innholdet
-       - text-white: gjør teksten hvit
-       - bg-gradient-to-r ...: lager en horisontal bakgrunnsgradient -->
+  <!-- Hele siden -->
   <div
-    class="flex flex-col items-center justify-center min-h-screen p-8 text-white bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"
+    class="flex flex-col items-center w-full text-white bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"
   >
-    <!-- Overskrift -->
-    <h1 class="mb-8 text-4xl font-extrabold">Velg en kategori 📚</h1>
+    <!-- Hero video på toppen -->
+    <IntroHero
+      :videoSrc="heroVideo"
+      title="Velkommen til Quizle!"
+      text="Bli med på spennende quizer sammen med Quizzi 🦊"
+    />
 
-    <!-- Grid for å vise kategorikortene.
-         - w-full max-w-4xl: gridens bredde blir maks 4xl
-         - grid-cols-1 / sm:grid-cols-2 / md:grid-cols-3: antall kolonner justeres etter skjermstørrelse
-         - gap-6: avstand mellom kortene -->
-    <div class="grid w-full max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-      <!-- Kategorikort: Hvert kort er en CategoryCard-komponent.
-           Vi sender inn props (verdier) til hvert kort: title, description og category (URL for routing). -->
-      <CategoryCard
-        title="Matte"
-        description="Test dine matteferdigheter!"
-        category="/category/matte"
-      />
-      <CategoryCard
-        title="Geografi"
-        description="Hvor godt kjenner du verden?"
-        category="/category/geografi"
-      />
-      <CategoryCard
-        title="Historie"
-        description="Hva husker du fra historietimen?"
-        category="/category/historie"
-      />
-      <CategoryCard
-        title="Dyr"
-        description="Hvor mye kan du om dyrenes verden?"
-        category="/category/dyr"
-      />
+    <!-- Mascot velkomstboble -->
+    <MascotBubble
+      :imageSrc="mascotImage"
+      title="Hei, jeg er Quizzi!"
+      text="Velkommen til Quizle! Velg en kategori og bli med på moroa 🎉"
+    />
+
+    <!-- Innhold (kategorier) -->
+    <div class="w-full max-w-6xl px-4 py-8">
+      <!-- Overskrift -->
+      <h1 class="mb-8 text-4xl font-extrabold text-center">Velg en kategori 📚</h1>
+
+      <!-- Grid med kategorikort -->
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+        <!-- Matte -->
+        <CategoryCard
+          title="Matte"
+          description="Test dine matteferdigheter!"
+          category="/category/matte"
+          :image="mathImage"
+        />
+        <!-- Geografi -->
+        <CategoryCard
+          title="Geografi"
+          description="Hvor godt kjenner du verden?"
+          category="/category/geografi"
+          :image="geographyImage"
+        />
+        <!-- Historie -->
+        <CategoryCard
+          title="Historie"
+          description="Hva husker du fra historietimen?"
+          category="/category/historie"
+          :image="historyImage"
+        />
+        <!-- Dyr -->
+        <CategoryCard
+          title="Dyr"
+          description="Hvor mye kan du om dyrenes verden?"
+          category="/category/dyr"
+          :image="animalsImage"
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-/* 
-  Importerer komponenten CategoryCard slik at vi kan bruke <CategoryCard /> i template-delen.
-  Denne komponenten ligger i "components/ui/CategoryCard.vue".
+/* Importer komponentene */
+import CategoryCard from '@/components/ui/CategoryCard.vue'
+import MascotBubble from '@/components/ui/MascotBubble.vue'
+import IntroHero from '@/components/ui/IntroHero.vue'
 
-  Hvert kort representerer en kategori som brukeren kan velge.
-*/
-import CategoryCard from '../components/ui/CategoryCard.vue'
+/* Importer bildene */
+import mathImage from '@/assets/icons/math.png'
+import geographyImage from '@/assets/icons/geography.png'
+import historyImage from '@/assets/icons/history.png'
+import animalsImage from '@/assets/icons/animals.png'
+import mascotImage from '@/assets/icons/chipmunk-hello-t.png'
+
+/* Importer videoen riktig */
+import heroVideo from '@/assets/videos/hero-video.mp4'
 </script>
 
 <!-- 
