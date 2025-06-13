@@ -9,7 +9,7 @@
       v-if="image"
       :src="image"
       alt=""
-      class="absolute inset-0 object-cover w-full h-full transition-opacity duration-300 group-hover:opacity-100"
+      class="absolute inset-0 object-cover object-[50%_25%] w-full h-full transition-opacity duration-300 group-hover:opacity-100"
     />
 
     <!-- Overlay for mørk effekt -->

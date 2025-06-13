@@ -11,6 +11,7 @@
         :title="quiz.title"
         :description="quiz.description"
         :category="quiz.path"
+        :image="quiz.image"
       />
     </div>
   </div>
@@ -18,6 +19,9 @@
 
 <script setup>
 import CategoryCard from '@/components/ui/CategoryCard.vue'
+const beginnerImage = new URL('@/assets/icons/beginner.png', import.meta.url).href
+const advancedImage = new URL('@/assets/icons/advanced.png', import.meta.url).href
+const timedImage = new URL('@/assets/icons/timed.png', import.meta.url).href
 
 const quizzes = [
   {
@@ -25,18 +29,21 @@ const quizzes = [
     title: 'Introquiz i geografi',
     description: 'Test dine grunnleggende geografikunnskaper!',
     path: '/quiz/geography-intro',
+    image: beginnerImage,
   },
   {
     id: 'geography-advanced',
     title: 'Avansert geografi',
     description: 'Utfordre deg selv med avanserte spørsmål!',
     path: '/quiz/geography-advanced',
+    image: advancedImage,
   },
   {
     id: 'geography-timed',
     title: 'Geografi på tid',
     description: 'Test hvor raskt du kan svare!',
     path: '/quiz/timed/geography-timed',
+    image: timedImage,
   },
 ]
 </script>

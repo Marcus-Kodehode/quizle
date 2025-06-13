@@ -11,6 +11,7 @@
         :title="quiz.title"
         :description="quiz.description"
         :category="quiz.path"
+        :image="quiz.image"
       />
     </div>
   </div>
@@ -18,6 +19,9 @@
 
 <script setup>
 import CategoryCard from '@/components/ui/CategoryCard.vue'
+const beginnerImage = new URL('@/assets/icons/beginner.png', import.meta.url).href
+const advancedImage = new URL('@/assets/icons/advanced.png', import.meta.url).href
+const timedImage = new URL('@/assets/icons/timed.png', import.meta.url).href
 
 const quizzes = [
   {
@@ -25,18 +29,21 @@ const quizzes = [
     title: 'Introquiz i historie',
     description: 'Hva kan du om historie?',
     path: '/quiz/history-intro', // vanlig quiz → QuizView.vue
+    image: beginnerImage,
   },
   {
     id: 'history-advanced',
     title: 'Avansert historie',
     description: 'Utfordre deg selv med avanserte spørsmål!',
     path: '/quiz/history-advanced', // vanlig quiz → QuizView.vue
+    image: advancedImage,
   },
   {
     id: 'history-timed',
     title: 'Historie på tid',
     description: 'Hvor raskt kan du svare på historie-spørsmål?',
     path: '/quiz/timed/history-timed', // TIMED quiz → QuizTimedView.vue
+    image: timedImage,
   },
 ]
 </script>

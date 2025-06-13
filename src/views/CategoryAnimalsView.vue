@@ -11,6 +11,7 @@
         :title="quiz.title"
         :description="quiz.description"
         :category="quiz.path"
+        :image="quiz.image"
       />
     </div>
   </div>
@@ -18,6 +19,9 @@
 
 <script setup>
 import CategoryCard from '@/components/ui/CategoryCard.vue'
+const beginnerImage = new URL('@/assets/icons/beginner.png', import.meta.url).href
+const advancedImage = new URL('@/assets/icons/advanced.png', import.meta.url).href
+const timedImage = new URL('@/assets/icons/timed.png', import.meta.url).href
 
 const quizzes = [
   {
@@ -25,18 +29,21 @@ const quizzes = [
     title: 'Introquiz om dyr',
     description: 'Hvor mye kan du om dyrenes verden?',
     path: '/quiz/animals-intro', // vanlig quiz
+    image: beginnerImage,
   },
   {
     id: 'animals-advanced',
     title: 'Avansert dyrequiz',
     description: 'For deg som kan masse om dyr!',
     path: '/quiz/animals-advanced', // vanlig quiz
+    image: advancedImage,
   },
   {
     id: 'animals-timed',
     title: 'Dyrequiz på tid',
     description: 'Hvor raskt klarer du å svare på dyrespørsmål?',
     path: '/quiz/timed/animals-timed', // TIMED quiz
+    image: timedImage,
   },
 ]
 </script>

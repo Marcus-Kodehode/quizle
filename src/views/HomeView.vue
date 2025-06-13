@@ -12,6 +12,7 @@
 
     <!-- Mascot velkomstboble -->
     <MascotBubble
+      class="mt-12"
       :imageSrc="mascotImage"
       title="Hei, jeg er Quizzi!"
       text="Velkommen til Quizle! Velg en kategori og bli med på moroa 🎉"
