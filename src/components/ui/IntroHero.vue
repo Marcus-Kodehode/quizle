@@ -1,23 +1,21 @@
 <template>
-  <!-- Hero container -->
   <div
     class="relative flex items-center justify-center w-full overflow-hidden"
-    style="height: 90vh"
+    :style="`height: calc(100vh - ${headerHeight}px)`"
   >
-    <!-- Juster høyden her om du vil -->
     <!-- Hero video -->
     <video
       autoplay
       muted
       loop
       playsinline
-      class="absolute top-0 left-0 object-cover object-top w-full h-full"
+      class="absolute inset-0 object-cover object-top w-full h-full"
     >
       <source :src="videoSrc" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 
-    <!-- Overlay content -->
+    <!-- Tekst overlay -->
     <div
       v-if="title || text"
       class="relative z-10 max-w-2xl p-6 text-center text-white rounded-lg bg-black/40 backdrop-blur-sm"
@@ -26,9 +24,11 @@
       <p v-if="text" class="text-lg drop-shadow">{{ text }}</p>
     </div>
 
-    <!-- Scroll indicator -->
+    <!-- Scroll pil -->
     <div class="absolute flex justify-center w-full bottom-4">
-      <span class="text-3xl text-white animate-bounce">⌄</span>
+      <span class="text-3xl text-white cursor-pointer animate-bounce" @click="$emit('scrollDown')">
+        ⌄
+      </span>
     </div>
   </div>
 </template>
@@ -39,11 +39,15 @@ defineProps({
   title: String,
   text: String,
 })
+defineEmits(['scrollDown'])
+
+const headerHeight = 0.5
 </script>
 
 <style scoped>
+/* Fikser video overflow på mobil */
 video {
   object-fit: cover;
-  object-position: top; /* Kan endres til center, bottom, etc om du vil */
+  object-position: top;
 }
 </style>
