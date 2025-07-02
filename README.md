@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/logo.png" alt="Quizle Logo" width="200"/>
+  <img src="src/assets/logo.png" alt="Quizle Logo" width="200"/>
 </p>
 
 # 🎉 Quizle – Lær og lek med Quizzi!
@@ -69,7 +69,7 @@ quizle/
 ## 📸 Eksempel på nettsiden
 
 <p align="center">
-  <img src="public/images/quizle-screenshot.png" alt="Quizle Skjermbilde" width="400"/>
+  <img src="src/assets/quizle-screenshot.png" alt="Quizle Skjermbilde" width="400"/>
 </p>
 
 ---
@@ -77,6 +77,7 @@ quizle/
 ## 🔧 Videre utvikling
 
 Planlagte forbedringer:
+
 - Brukerinnlogging og poengsystem
 - Resultatside med poeng og medaljer
 - Flere quiz-kategorier
