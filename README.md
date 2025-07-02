@@ -10,7 +10,7 @@ Velkommen til **Quizle** – en fargerik og interaktiv quiz-app utviklet for bar
 
 ## 🌈 Hva er dette prosjektet?
 
-Dette prosjektet er laget som en del av en læringsreise i frontend-utvikling med Vue. Målet er å lage en engasjerende og brukervennlig plattform for læring gjennom lek.
+Dette prosjektet er laget som en del av en læringsreise i frontend-utvikling med Vue. Målet er å lage en engasjerende og brukervennlig plattform for læring gjennom spill.
 
 ---
 
