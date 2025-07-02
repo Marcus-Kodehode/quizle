@@ -35,6 +35,7 @@
     <router-link @click="onClick" to="/account" class="font-semibold text-white hover:underline">
       Bruker
     </router-link>
+    <RouterLink to="/leaderboard" class="text-white hover:underline"> Stjerner </RouterLink>
   </div>
 </template>
 

@@ -25,6 +25,11 @@ const routes = [
 
   // Resultatsiden
   { path: '/result', name: 'Result', component: ResultView },
+  {
+    path: '/leaderboard',
+    name: 'StarsLeaderboard',
+    component: () => import('@/views/StarsLeaderboardView.vue'),
+  },
 ]
 
 const router = createRouter({

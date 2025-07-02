@@ -1,100 +1,101 @@
+<p align="center">
+  <img src="public/images/logo.png" alt="Quizle Logo" width="200"/>
+</p>
+
 # 🎉 Quizle – Lær og lek med Quizzi!
 
-**Quizle** er en interaktiv og fargerik quiz-app utviklet for barn og unge. Lær om matte, historie, geografi og dyr (enn så lenge) gjennom morsomme og engasjerende spørsmål – med min maskot **Quizzi** som guide! 🦊
+Velkommen til **Quizle** – en fargerik og interaktiv quiz-app utviklet for barn og unge. Her kan du lære om matte, historie, geografi og dyr (flere kommer!), guidet av maskoten **Quizzi** 🦊
 
 ---
 
-## 🚀 Teknologier brukt
+## 🌈 Hva er dette prosjektet?
 
-- **Vue 3** + `<script setup>`
-- **Vite** – rask utviklingsserver
-- **Tailwind CSS** – for moderne styling
-- **Vue Router** – for navigasjon
-- **Pinia (valgfritt)** – for state management (hvis aktuelt)
-- **Custom komponentstruktur** – lett å vedlikeholde og utvide
+Dette prosjektet er laget som en del av en læringsreise i frontend-utvikling med Vue. Målet er å lage en engasjerende og brukervennlig plattform for læring gjennom lek.
 
 ---
 
-## 🧱 Struktur
+## 🚀 Kom i gang
 
-```
-src/
-│
-├── assets/             # Bilder, ikoner, videoer osv.
-├── components/         # Gjenbrukbare UI-komponenter (f.eks. Header, CategoryCard)
-├── views/              # Sider som HomeView, CategoryView osv.
-├── router/             # Vue Router-konfigurasjon
-└── App.vue             # Root-komponent
-```
-
----
-
-## 📦 Installasjon
-
-1. **Klon repoet**
+### 1. Klon prosjektet
 
 ```bash
 git clone https://github.com/ditt-brukernavn/quizle.git
 cd quizle
 ```
 
-2. **Installer avhengigheter**
+### 2. Installer avhengigheter
 
 ```bash
 npm install
 ```
 
-3. **Start utviklingsserver**
+### 3. Start utviklingsserver
 
 ```bash
 npm run dev
 ```
 
-4. **Åpne i nettleser**
+---
 
-```bash
-http://localhost:5173
+## 🛠️ Teknologier brukt
+
+- **Vue 3** + `<script setup>`
+- **Vite** – rask utviklingsserver
+- **Tailwind CSS** – for moderne styling
+- **Vue Router** – for navigasjon
+- **Pinia** (valgfritt) – for state management
+- **Custom komponentstruktur** – lett å vedlikeholde og utvide
+
+---
+
+## 🗂️ Prosjektstruktur
+
+```
+quizle/
+├── public/             # Offentlige filer (logo, bilder)
+├── src/                # Kildekode
+│   ├── assets/         # Bilder, ikoner, videoer
+│   ├── components/     # Gjenbrukbare UI-komponenter
+│   ├── views/          # Sider som HomeView, CategoryView
+│   ├── router/         # Navigasjon (Vue Router)
+│   └── App.vue         # Root-komponent
+├── index.html          # HTML-mal
+├── package.json        # Avhengigheter og scripts
+└── vite.config.js      # Vite-konfigurasjon
 ```
 
 ---
 
-## 📱 Mobiltilpasning
+## 📸 Eksempel på nettsiden
 
-Quizle er responsiv og mobilvennlig. På små skjermer vises en hamburgermeny som åpner en skjermdekkende overlay med navigasjon og kategori-dropdown.
-
----
-
-## 🌈 Funksjoner
-
-- 🎥 Videobasert velkomst (IntroHero)
-- 🔢 Kategorier med bilder og beskrivelse
-- 📚 Flere quiz-kategorier (Matte, Geografi, Historie, Dyr)
-- 🔽 Dropdown i meny for hurtignavigasjon
-- 🧭 Smooth scroll til seksjoner
-- 📱 Fullskjerm overlay-meny på mobil
+<p align="center">
+  <img src="public/images/quizle-screenshot.png" alt="Quizle Skjermbilde" width="400"/>
+</p>
 
 ---
 
-## ✅ TODO / Videre utvikling
+## 🔧 Videre utvikling
 
-- [ ] Brukerinnlogging og poengsystem
-- [ ] Resultatside med poeng og medaljer
-- [ ] Flere quizkategorier
-- [ ] Flerspråklig støtte (norsk/engelsk)
-
----
-
-## 🧠 Bidra
-
-Har du forslag, forbedringer eller ønsker å bidra? Lag gjerne en issue eller en pull request!
+Planlagte forbedringer:
+- Brukerinnlogging og poengsystem
+- Resultatside med poeng og medaljer
+- Flere quiz-kategorier
+- Flerspråklig støtte (norsk/engelsk)
 
 ---
 
-## © Lisens
+## ✍️ Signatur
 
-MIT License – fritt å bruke, endre og dele videre.
+```
+//  One bug to find them,
+//  One fix to bring them all,
+//  And in the darkness bind them.
+```
 
 ---
 
-_“One bug to find them, one fix to bring them all, and in the darkness bind them.”_  
-**– Marcus Børresen**
+## 📬 Kontakt
+
+Har du forslag, ideer eller ønsker å bidra? Åpne en issue eller send inn en pull request via GitHub!
+
+---

@@ -67,14 +67,16 @@ let timerInterval = null
 // Funksjon for å laste inn quiz-data fra JSON basert på quizId i URL
 async function loadQuizData() {
   const quizId = route.params.id
+
   try {
     const data = await import(`@/data/${quizId}.json`)
     questions.value = data.default
+
+    quizStore.setCurrentQuizId(quizId) // 👈 sett quizId FØR reset
     quizStore.resetQuiz()
     quizStore.setTotalQuestions(questions.value.length)
-    startTimer()
   } catch (error) {
-    console.error('Kunne ikke laste quiz-data:', error)
+    console.error('❌ Kunne ikke laste quiz-data:', error)
   }
 }
 
@@ -115,6 +117,7 @@ function nextQuestion() {
 // Når komponenten monteres, last inn quiz-data
 onMounted(() => {
   loadQuizData()
+  quizStore.setCurrentQuizId(route.params.id)
 })
 
 // Rydd opp (stopp timer) når komponenten avmonteres

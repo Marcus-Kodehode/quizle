@@ -1,36 +1,33 @@
-// Importerer defineStore fra Pinia.
-// defineStore brukes for å definere en "store" — et globalt sted hvor vi kan lagre og dele data i appen.
 import { defineStore } from 'pinia'
 
-// Lager og eksporterer en Pinia-store som heter 'quiz'.
-// Vi bruker useQuizStore() for å hente denne i komponentene våre.
 export const useQuizStore = defineStore('quiz', {
-  // state er en funksjon som returnerer et objekt som inneholder de dataene vi vil lagre i store.
-  // Disse dataene er "reaktive" — når de endres, vil alle komponenter som bruker dem oppdatere seg automatisk.
   state: () => ({
-    score: 0, // Antall riktige svar brukeren har fått i quizen.
-    totalQuestions: 0, // Totalt antall spørsmål i quizen.
+    score: 0, // Antall riktige svar
+    totalQuestions: 0, // Totalt antall spørsmål
+    currentQuizId: '', // 💡 Tom streng istedenfor null for konsistens
   }),
 
-  // actions er funksjoner vi definerer for å endre på state.
-  // Ved å bruke actions holder vi endringene ryddige og enkle å følge.
-
   actions: {
-    // resetQuiz: Tilbakestiller quizdata — brukes når vi starter en ny quiz.
+    // Tilbakestiller quiz-status
     resetQuiz() {
       this.score = 0
       this.totalQuestions = 0
+      this.currentQuizId = ''
     },
 
-    // incrementScore: Øker poengsummen med 1 — brukes når brukeren svarer riktig.
+    // Øker poengsum med 1
     incrementScore() {
       this.score++
     },
 
-    // setTotalQuestions: Setter hvor mange spørsmål det er i quizen.
-    // Brukes når vi har lastet inn spørsmålene fra json-filen.
+    // Setter antall spørsmål
     setTotalQuestions(count) {
       this.totalQuestions = count
+    },
+
+    // Setter aktiv quiz-ID (f.eks. "math-intro")
+    setCurrentQuizId(id) {
+      this.currentQuizId = id || '' // fallback hvis id er undefined
     },
   },
 })

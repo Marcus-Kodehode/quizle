@@ -90,13 +90,16 @@ const quizFinished = ref(false)
 */
 async function loadQuizData() {
   const quizId = route.params.id
+
   try {
     const data = await import(`@/data/${quizId}.json`)
     questions.value = data.default
+
+    quizStore.setCurrentQuizId(quizId) // 👈 sett quizId FØR reset
     quizStore.resetQuiz()
     quizStore.setTotalQuestions(questions.value.length)
   } catch (error) {
-    console.error('Kunne ikke laste quiz-data:', error)
+    console.error('❌ Kunne ikke laste quiz-data:', error)
   }
 }
 
@@ -124,6 +127,7 @@ function handleAnswer(selectedAnswer) {
 */
 onMounted(() => {
   loadQuizData()
+  quizStore.setCurrentQuizId(route.params.id)
 })
 </script>
 

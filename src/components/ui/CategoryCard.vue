@@ -17,21 +17,45 @@
       class="absolute inset-0 transition-colors duration-300 bg-black bg-opacity-30 group-hover:bg-opacity-20"
     ></div>
 
-    <!-- Tekst over bildet -->
-    <div class="relative z-10 flex items-end h-full p-4">
+    <!-- Tekst og stjerner -->
+    <div class="relative z-10 flex flex-col justify-end h-full p-4">
       <h2 class="text-xl font-bold text-white">{{ title }}</h2>
+
+      <!-- Stjernevisning -->
+      <div class="flex mt-1 space-x-1">
+        <template v-for="n in 3" :key="n">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="w-5 h-5"
+            :fill="n <= earnedStars ? 'yellow' : 'gray'"
+          >
+            <path
+              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+            />
+          </svg>
+        </template>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
 import { useRouter } from 'vue-router'
+import { ref, onMounted } from 'vue'
+import { getStarsForCategory } from '@/utils/starsStorage'
 
 const props = defineProps({
   title: String,
   description: String,
   category: String,
   image: String, // Bilde-URL
+})
+
+const earnedStars = ref(0)
+
+onMounted(() => {
+  earnedStars.value = getStarsForCategory(props.category)
 })
 
 const router = useRouter()
